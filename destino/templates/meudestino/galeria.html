@@ -1,0 +1,34 @@
+{% extends 'meudestino/base.html' %}
+{% load static %}
+
+{% block title %}Galeria de Fotos - Salvador{% endblock %}
+
+{% block content %}
+<section class="gallery-header">
+    <h2>Galeria de Fotos</h2>
+    <p>Confira alguns dos cenários mais deslumbrantes da cidade de Salvador.</p>
+</section>
+
+<section class="gallery-grid">
+    <div class="gallery-item">
+        <img src="{% static 'images/pelourinho.jpg' %}" alt="Pelourinho">
+        <div class="caption">Centro Histórico do Pelourinho</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/farol.jpg' %}" alt="Farol da Barra">
+        <div class="caption">Farol da Barra</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/elevador.jpg' %}" alt="Elevador Lacerda">
+        <div class="caption">Elevador Lacerda</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/bonfim.jpg' %}" alt="Igreja do Bonfim">
+        <div class="caption">Igreja do Senhor do Bonfim</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'images/porto.jpg' %}" alt="Praia do Porto da Barra">
+        <div class="caption">Praia do Porto da Barra</div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Descubra Salvador{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Salvador <span>Bahia</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="{% url 'atracoes' %}">Atrações</a></li>
+                <li><a href="{% url 'historia' %}">História e Cultura</a></li>
+                <li><a href="{% url 'galeria' %}">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Agência de Turismo - Descubra Salvador. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

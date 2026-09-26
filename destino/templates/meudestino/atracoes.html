@@ -1,0 +1,45 @@
+{% extends 'meudestino/base.html' %}
+{% load static %}
+
+{% block title %}Principais Atrações - Salvador{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h2>Explore os Melhores Destinos de Salvador</h2>
+    <p>Conheça os pontos turísticos mais emblemáticos da primeira capital do Brasil.</p>
+</section>
+
+<section class="cards-container">
+    <article class="card">
+        <img src="{% static 'images/pelourinho.jpg' %}" alt="Pelourinho">
+        <div class="card-body">
+            <h3>Pelourinho</h3>
+            <p>O coração do Centro Histórico de Salvador, famoso por seu conjunto arquitetônico colonial barroco português, ruazinhas de paralelepípedo e manifestações culturais vivas.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="{% static 'images/farol.jpg' %}" alt="Farol da Barra">
+        <div class="card-body">
+            <h3>Farol da Barra</h3>
+            <p>Localizado no Forte de Santo Antônio da Barra, o farol oferece uma vista espetacular para o Oceano Atlântico e a Baía de Todos-os-Santos, sendo o lugar perfeito para ver o pôr do sol.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="{% static 'images/elevador.jpg' %}" alt="Elevador Lacerda">
+        <div class="card-body">
+            <h3>Elevador Lacerda</h3>
+            <p>O primeiro elevador urbano do mundo conecta a Cidade Baixa à Cidade Alta, proporcionando um panorama único do Mercado Modelo e do mar baiano.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <img src="{% static 'images/bonfim.jpg' %}" alt="Igreja do Bonfim">
+        <div class="card-body">
+            <h3>Igreja do Senhor do Bonfim</h3>
+            <p>Famosa pelas tradicionais fitinhas coloridas amarradas no seu gradil, é o centro da devoção e sincretismo religioso soteropolitano.</p>
+        </div>
+    </article>
+</section>
+{% endblock %}
